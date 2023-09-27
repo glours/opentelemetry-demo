@@ -1,0 +1,24 @@
+include:
+  - path:
+    - ./src/infrastructure/compose.yaml
+    - ./src/accountingservice/compose.yaml
+    - ./src/frauddetectionservice/compose.yaml
+    - ./src/cartservice/compose.yaml
+    - ./src/currencyservice/compose.yaml
+    - ./src/emailservice/compose.yaml
+    - ./src/paymentservice/compose.yaml
+    - ./src/featureflagservice/compose.yaml
+    - ./src/adservice/compose.yaml
+    - ./src/quoteservice/compose.yaml
+    - ./src/productcatalogservice/compose.yaml
+    - ./src/recommendationservice/compose.yaml
+    - ./src/shippingservice/compose.yaml
+    - ./src/checkoutservice/compose.yaml
+    - ./src/frontend/compose.yaml
+    - ./src/frontendproxy/compose.yaml
+    - ./src/loadgenerator/compose.yaml
+
+networks:
+  default:
+    name: opentelemetry-demo
+    driver: bridge

@@ -1,0 +1,6 @@
+include:
+  - ../kafka/compose.yaml
+  - ../grafana/compose.yaml
+  - ../otelcollector/compose.yaml
+  - ./compose.redis.yaml
+  - ./compose.postgres.yaml
