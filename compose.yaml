@@ -1,6 +1,6 @@
 include:
+  - git@github.com:glours/opentelemetry-demo.git#multi-compose-files:src/infrastructure/compose.yaml
   - path:
-    - ./src/infrastructure/compose.yaml
     - ./src/accountingservice/compose.yaml
     - ./src/frauddetectionservice/compose.yaml
     - ./src/cartservice/compose.yaml

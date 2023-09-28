@@ -1,3 +1,7 @@
+include:
+  - path:
+      - ../infrastructure/compose.postgres.yaml
+
 services:
   proxy:
     image: nginx

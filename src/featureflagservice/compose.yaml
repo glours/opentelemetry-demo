@@ -33,11 +33,3 @@ services:
       options:
         max-size: "5m"
         max-file: "2"
-
-  # Postgres used by Feature Flag service for development purpose
-  ffs_postgres:
-    extends:
-      service: ffs_postgres
-      file: ../infrastructure/compose.postgres.yaml
-    profiles:
-      - development
